@@ -12,31 +12,48 @@ void DUMMY_CODE(Targs &&... /* unused */) {}
 
 using namespace std;
 
-StreamReassembler::StreamReassembler(const size_t capacity) : _output(capacity), _capacity(capacity) {}
+StreamReassembler::StreamReassembler(const size_t capacity)
+    : _output(capacity), _capacity(capacity), _unassembled_bytes_count(0), _eof_index(-1) {}
 
 //! \details This function accepts a substring (aka a segment) of bytes,
 //! possibly out-of-order, from the logical stream, and assembles any newly
 //! contiguous substrings and writes them into the output stream in order.
 void StreamReassembler::push_substring(const string &data, const uint64_t index, const bool eof) {
-    StreamReassembler::SubStream sub_stream = StreamReassembler::SubStream{index, index + data.length(), eof, data};
-    if (sub_stream._end <= _output.bytes_written())
-        return;
-    if (!_end_to_sub_stream.count(sub_stream._start)) {
-        _unassembled_bytes += data.length();
-        _end_to_sub_stream[sub_stream._start] = sub_stream;
+    uint64_t read_len = _output.bytes_read();
+    uint64_t write_len = _output.bytes_written();
+    uint64_t data_len = data.length();
+    uint64_t eof_index = index + data_len;
+    for (uint64_t idx = 0; idx < data_len; idx++) {
+        uint64_t cur_index = index + idx;
+        // legal in [read_len, read_len + _capacity)
+        if (cur_index >= read_len + _capacity)
+            break;
+        if (cur_index < write_len)
+            continue;
+        if (!_unassembled_bytes.count(cur_index)) {
+            _unassembled_bytes_count++;
+            _unassembled_bytes[cur_index] = data.at(idx);
+        }
     }
+    if (eof)
+        _eof_index = eof_index;
 
-    while (_end_to_sub_stream.count(_output.bytes_written())) {
-        auto cur_sub_stream = _end_to_sub_stream[_output.bytes_written()];
-        _end_to_sub_stream.erase(_output.bytes_written());
-        _unassembled_bytes -= cur_sub_stream._data.length();
-
-        _output.write(cur_sub_stream._data);
-        if (cur_sub_stream._eof)
-            _output.end_input();
+    string assembled_bytes = "";
+    uint64_t end_index = write_len;
+    for (uint64_t idx = write_len; idx < read_len + _capacity; idx++) {
+        if (!_unassembled_bytes.count(idx))
+            break;
+        assembled_bytes += _unassembled_bytes[idx];
+        _unassembled_bytes.erase(idx);
+        _unassembled_bytes_count--;
+        end_index = idx + 1;
     }
+    if (!assembled_bytes.empty())
+        _output.write(assembled_bytes);
+    if (end_index == _eof_index)
+        _output.end_input();
 }
 
-size_t StreamReassembler::unassembled_bytes() const { return _unassembled_bytes; }
+size_t StreamReassembler::unassembled_bytes() const { return _unassembled_bytes_count; }
 
 bool StreamReassembler::empty() const { return _output.buffer_empty(); }
