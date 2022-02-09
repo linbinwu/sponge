@@ -4,6 +4,18 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
 AckReceived	tests/sender_harness.hh	/^    AckReceived(WrappingInt32 ackno) : _ackno(ackno) {}$/;"	f	struct:AckReceived
 AckReceived	tests/sender_harness.hh	/^struct AckReceived : public SenderAction {$/;"	s
 Address	libsponge/util/address.cc	/^Address::Address(const sockaddr *addr, const size_t size) : _size(size) {$/;"	f	class:Address
@@ -26,7 +38,7 @@ BufferViewList	libsponge/util/buffer.hh	/^    BufferViewList(const char *s) : Bu
 BufferViewList	libsponge/util/buffer.hh	/^    BufferViewList(const std::string &str) : BufferViewList(std::string_view(str)) {}$/;"	f	class:BufferViewList
 BufferViewList	libsponge/util/buffer.hh	/^    BufferViewList(std::string_view str) { _views.push_back({const_cast<char *>(str.data()), str.size()}); }$/;"	f	class:BufferViewList
 BufferViewList	libsponge/util/buffer.hh	/^class BufferViewList {$/;"	c
-ByteStream	libsponge/byte_stream.cc	/^ByteStream::ByteStream(const size_t capacity) {$/;"	f	class:ByteStream
+ByteStream	libsponge/byte_stream.cc	/^ByteStream::ByteStream(const size_t capacity) { capacity_ = capacity; }$/;"	f	class:ByteStream
 ByteStream	libsponge/byte_stream.hh	/^class ByteStream {$/;"	c
 ByteStreamAction	tests/byte_stream_test_harness.hh	/^struct ByteStreamAction : public ByteStreamTestStep {$/;"	s
 ByteStreamExpectation	tests/byte_stream_test_harness.hh	/^struct ByteStreamExpectation : public ByteStreamTestStep {$/;"	s
@@ -44,15 +56,117 @@ BytesRead	tests/byte_stream_test_harness.hh	/^struct BytesRead : public ByteStre
 BytesWritten	tests/byte_stream_test_harness.cc	/^BytesWritten::BytesWritten(const size_t bytes_written) : _bytes_written(bytes_written) {}$/;"	f	class:BytesWritten
 BytesWritten	tests/byte_stream_test_harness.hh	/^struct BytesWritten : public ByteStreamExpectation {$/;"	s
 CLONEDEV	libsponge/util/tun.cc	/^static constexpr const char *CLONEDEV = "\/dev\/net\/tun";$/;"	v	file:
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/root\/sponge\/build$/;"	m
+CMAKE_BINARY_DIR	build/apps/Makefile	/^CMAKE_BINARY_DIR = \/root\/sponge\/build$/;"	m
+CMAKE_BINARY_DIR	build/doctests/Makefile	/^CMAKE_BINARY_DIR = \/root\/sponge\/build$/;"	m
+CMAKE_BINARY_DIR	build/libsponge/Makefile	/^CMAKE_BINARY_DIR = \/root\/sponge\/build$/;"	m
+CMAKE_BINARY_DIR	build/tests/Makefile	/^CMAKE_BINARY_DIR = \/root\/sponge\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/apps/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/doctests/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/libsponge/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/tests/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/root\/sponge$/;"	m
+CMAKE_SOURCE_DIR	build/apps/Makefile	/^CMAKE_SOURCE_DIR = \/root\/sponge$/;"	m
+CMAKE_SOURCE_DIR	build/doctests/Makefile	/^CMAKE_SOURCE_DIR = \/root\/sponge$/;"	m
+CMAKE_SOURCE_DIR	build/libsponge/Makefile	/^CMAKE_SOURCE_DIR = \/root\/sponge$/;"	m
+CMAKE_SOURCE_DIR	build/tests/Makefile	/^CMAKE_SOURCE_DIR = \/root\/sponge$/;"	m
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+CXX_STD	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#      define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#    define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define CXX_STD /;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION /;"	d	file:
+C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION$/;"	d	file:
+C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define C_VERSION /;"	d	file:
 Close	tests/sender_harness.hh	/^    Close() {}$/;"	f	struct:Close
 Close	tests/sender_harness.hh	/^struct Close : public SenderAction {$/;"	s
 Close	tests/tcp_expectation.hh	/^struct Close : public TCPAction {$/;"	s
 Connect	tests/tcp_expectation.hh	/^struct Connect : public TCPAction {$/;"	s
+DEC	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DEC	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
 DEFAULT_TEST_WINDOW	tests/sender_harness.hh	/^const unsigned int DEFAULT_TEST_WINDOW = 137;$/;"	v
 DEFAULT_TEST_WINDOW	tests/tcp_fsm_test_harness.cc	/^const unsigned int DEFAULT_TEST_WINDOW = 137;$/;"	v
 DUMMY_CODE	libsponge/byte_stream.cc	/^void DUMMY_CODE(Targs &&... \/* unused *\/) {}$/;"	f
 DUMMY_CODE	libsponge/stream_reassembler.cc	/^void DUMMY_CODE(Targs &&... \/* unused *\/) {}$/;"	f
 Direction	libsponge/util/eventloop.hh	/^    enum class Direction : short {$/;"	c	class:EventLoop
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/apps/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/doctests/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/libsponge/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/tests/Makefile	/^EQUALS = =$/;"	m
 EndInput	tests/byte_stream_test_harness.hh	/^struct EndInput : public ByteStreamAction {$/;"	s
 Eof	tests/byte_stream_test_harness.cc	/^Eof::Eof(const bool eof) : _eof(eof) {}$/;"	f	class:Eof
 Eof	tests/byte_stream_test_harness.hh	/^struct Eof : public ByteStreamExpectation {$/;"	s
@@ -108,7 +222,13 @@ FDWrapper	libsponge/util/file_descriptor.hh	/^    class FDWrapper {$/;"	c	class:
 FileDescriptor	libsponge/util/file_descriptor.cc	/^FileDescriptor::FileDescriptor(const int fd) : _internal_fd(make_shared<FDWrapper>(fd)) {}$/;"	f	class:FileDescriptor
 FileDescriptor	libsponge/util/file_descriptor.cc	/^FileDescriptor::FileDescriptor(shared_ptr<FDWrapper> other_shared_ptr) : _internal_fd(move(other_shared_ptr)) {}$/;"	f	class:FileDescriptor
 FileDescriptor	libsponge/util/file_descriptor.hh	/^class FileDescriptor {$/;"	c
+HEX	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+HEX	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
 HeaderTooShort	libsponge/util/parser.hh	/^    HeaderTooShort,   \/\/!< Header length is shorter than minimum required$/;"	m	class:ParseResult
+ID_VOID_MAIN	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+ID_VOID_MAIN	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
 In	libsponge/util/eventloop.hh	/^        In = POLLIN,   \/\/!< Callback will be triggered when Rule::fd is readable.$/;"	m	class:EventLoop::Direction
 InputEnded	tests/byte_stream_test_harness.cc	/^InputEnded::InputEnded(const bool input_ended) : _input_ended(input_ended) {}$/;"	f	class:InputEnded
 InputEnded	tests/byte_stream_test_harness.hh	/^struct InputEnded : public ByteStreamExpectation {$/;"	s
@@ -149,12 +269,33 @@ NoError	libsponge/util/parser.hh	/^    NoError = 0,      \/\/!< Success$/;"	m	cl
 NotAtEof	tests/fsm_stream_reassembler_harness.hh	/^    NotAtEof() {}$/;"	f	struct:NotAtEof
 NotAtEof	tests/fsm_stream_reassembler_harness.hh	/^struct NotAtEof : public ReassemblerExpectation {$/;"	s
 Out	libsponge/util/eventloop.hh	/^        Out = POLLOUT  \/\/!< Callback will be triggered when Rule::fd is writable.$/;"	m	class:EventLoop::Direction
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
 PacketTooShort	libsponge/util/parser.hh	/^    PacketTooShort,   \/\/!< Not enough data to finish parsing$/;"	m	class:ParseResult
 ParseResult	libsponge/util/parser.hh	/^enum class ParseResult {$/;"	c
 Peek	tests/byte_stream_test_harness.cc	/^Peek::Peek(const std::string &output) : _output(output) {}$/;"	f	class:Peek
 Peek	tests/byte_stream_test_harness.hh	/^struct Peek : public ByteStreamExpectation {$/;"	s
 Pop	tests/byte_stream_test_harness.cc	/^Pop::Pop(const size_t len) : _len(len) {}$/;"	f	class:Pop
 Pop	tests/byte_stream_test_harness.hh	/^struct Pop : public ByteStreamAction {$/;"	s
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/apps/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/doctests/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/libsponge/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/tests/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 Raw	libsponge/util/address.hh	/^    class Raw {$/;"	c	class:Address
 ReassemblerAction	tests/fsm_stream_reassembler_harness.hh	/^struct ReassemblerAction : public ReassemblerTestStep {$/;"	s
 ReassemblerExpectation	tests/fsm_stream_reassembler_harness.hh	/^struct ReassemblerExpectation : public ReassemblerTestStep {$/;"	s
@@ -175,6 +316,33 @@ RemainingCapacity	tests/byte_stream_test_harness.hh	/^struct RemainingCapacity :
 Result	libsponge/util/eventloop.hh	/^    enum class Result {$/;"	c	class:EventLoop::Direction
 Result	tests/receiver_harness.hh	/^    enum class Result { NOT_SYN, OK };$/;"	c	struct:SegmentArrives
 Rule	libsponge/util/eventloop.hh	/^    class Rule {$/;"	c	class:EventLoop::Direction
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/apps/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/doctests/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/libsponge/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/tests/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
 SPONGE_BYTE_STREAM_HARNESS_HH	tests/byte_stream_test_harness.hh	/^#define SPONGE_BYTE_STREAM_HARNESS_HH$/;"	d
 SPONGE_FSM_STREAM_REASSEMBLER_HARNESS_HH	tests/fsm_stream_reassembler_harness.hh	/^#define SPONGE_FSM_STREAM_REASSEMBLER_HARNESS_HH$/;"	d
 SPONGE_LIBSPONGE_ADDRESS_HH	libsponge/util/address.hh	/^#define SPONGE_LIBSPONGE_ADDRESS_HH$/;"	d
@@ -200,6 +368,19 @@ SPONGE_TESTS_TEST_ERR_IF_HH	tests/test_err_if.hh	/^#define SPONGE_TESTS_TEST_ERR
 SPONGE_TESTS_TEST_SHOULD_BE_HH	tests/test_should_be.hh	/^#define SPONGE_TESTS_TEST_SHOULD_BE_HH$/;"	d
 SPONGE_TESTS_TEST_UTILS_HH	tests/test_utils.hh	/^#define SPONGE_TESTS_TEST_UTILS_HH$/;"	d
 SPONGE_TESTS_TEST_UTILS_IPV4_HH	tests/test_utils_ipv4.hh	/^#define SPONGE_TESTS_TEST_UTILS_IPV4_HH$/;"	d
+STRINGIFY	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/apps/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/doctests/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/libsponge/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/tests/Makefile	/^SUFFIXES =$/;"	m
 SegmentArrives	tests/receiver_harness.hh	/^struct SegmentArrives : public ReceiverAction {$/;"	s
 SegmentExpectationViolation	tests/sender_harness.hh	/^    SegmentExpectationViolation(const std::string &msg) : SenderExpectationViolation(msg) {}$/;"	f	class:SegmentExpectationViolation
 SegmentExpectationViolation	tests/sender_harness.hh	/^class SegmentExpectationViolation : public SenderExpectationViolation {$/;"	c
@@ -224,6 +405,7 @@ StateExpectationViolation	tests/tcp_expectation_forward.hh	/^    StateExpectatio
 StateExpectationViolation	tests/tcp_expectation_forward.hh	/^class StateExpectationViolation : public TCPExpectationViolation {$/;"	c
 StreamReassembler	libsponge/stream_reassembler.cc	/^StreamReassembler::StreamReassembler(const size_t capacity) : _output(capacity), _capacity(capacity) {}$/;"	f	class:StreamReassembler
 StreamReassembler	libsponge/stream_reassembler.hh	/^class StreamReassembler {$/;"	c
+SubStream	libsponge/stream_reassembler.hh	/^    struct SubStream {$/;"	s	class:StreamReassembler
 SubmitSegment	tests/fsm_stream_reassembler_harness.hh	/^    SubmitSegment(std::string data, size_t index) : _data(data), _index(index) {}$/;"	f	struct:SubmitSegment
 SubmitSegment	tests/fsm_stream_reassembler_harness.hh	/^struct SubmitSegment : public ReassemblerAction {$/;"	s
 Success	libsponge/util/eventloop.hh	/^        Success,  \/\/!< At least one Rule was triggered.$/;"	m	class:EventLoop::Direction::Result
@@ -276,6 +458,8 @@ Write	tests/tcp_expectation.hh	/^struct Write : public TCPAction {$/;"	s
 WriteBytes	tests/sender_harness.hh	/^    WriteBytes(std::string &&bytes) : _bytes(std::move(bytes)), _end_input(false) {}$/;"	f	struct:WriteBytes
 WriteBytes	tests/sender_harness.hh	/^struct WriteBytes : public SenderAction {$/;"	s
 WrongIPVersion	libsponge/util/parser.hh	/^    WrongIPVersion,   \/\/!< Got a version of IP other than 4$/;"	m	class:ParseResult
+__has_include	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define __has_include(/;"	d	file:
+__has_include	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
 _ackno	tests/receiver_harness.hh	/^    std::optional<WrappingInt32> _ackno;$/;"	m	struct:ExpectAckno
 _ackno	tests/sender_harness.hh	/^    WrappingInt32 _ackno;$/;"	m	struct:AckReceived
 _attempt_and_error	libsponge/util/util.hh	/^    std::string _attempt_and_error;  \/\/!< What was attempted, and what happened$/;"	m	class:tagged_error
@@ -346,14 +530,14 @@ at	libsponge/util/buffer.hh	/^    uint8_t at(const size_t n) const { return str(
 bind	libsponge/util/socket.cc	/^void Socket::bind(const Address &address) { SystemCall("bind", ::bind(fd_num(), address, address.size())); }$/;"	f	class:Socket
 buffer	doctests/parser_example.cc	/^std::string buffer;$/;"	v
 buffer	libsponge/util/parser.hh	/^    Buffer buffer() const { return _buffer; }$/;"	f	class:NetParser
-buffer_empty	libsponge/byte_stream.cc	/^bool ByteStream::buffer_empty() const {$/;"	f	class:ByteStream
-buffer_size	libsponge/byte_stream.cc	/^size_t ByteStream::buffer_size() const {$/;"	f	class:ByteStream
+buffer_empty	libsponge/byte_stream.cc	/^bool ByteStream::buffer_empty() const { return buffer_.empty(); }$/;"	f	class:ByteStream
+buffer_size	libsponge/byte_stream.cc	/^size_t ByteStream::buffer_size() const { return buffer_.length(); }$/;"	f	class:ByteStream
 buffers	libsponge/util/buffer.hh	/^    const std::deque<Buffer> &buffers() const { return _buffers; }$/;"	f	class:BufferList
 build_segment	tests/receiver_harness.hh	/^    TCPSegment build_segment() const {$/;"	f	struct:SegmentArrives
 bytes	tests/tcp_expectation.hh	/^    uint64_t bytes;$/;"	m	struct:ExpectBytesInFlight
 bytes	tests/tcp_expectation.hh	/^    uint64_t bytes;$/;"	m	struct:ExpectUnassembledBytes
-bytes_read	libsponge/byte_stream.cc	/^size_t ByteStream::bytes_read() const {$/;"	f	class:ByteStream
-bytes_written	libsponge/byte_stream.cc	/^size_t ByteStream::bytes_written() const {$/;"	f	class:ByteStream
+bytes_read	libsponge/byte_stream.cc	/^size_t ByteStream::bytes_read() const { return bytes_read_; }$/;"	f	class:ByteStream
+bytes_written	libsponge/byte_stream.cc	/^size_t ByteStream::bytes_written() const { return bytes_written_; }$/;"	f	class:ByteStream
 callback	libsponge/util/eventloop.hh	/^        CallbackT callback;   \/\/!< A callback that reads or writes fd.$/;"	m	class:EventLoop::Direction::Rule
 can_read	tests/tcp_fsm_test_harness.cc	/^bool TestFD::TestRFD::can_read() const {$/;"	f	class:TestFD::TestRFD
 can_read	tests/tcp_fsm_test_harness.hh	/^    bool can_read() const { return _flt.can_read(); }$/;"	f	class:TCPTestHarness
@@ -374,6 +558,8 @@ compare_tcp_headers_nolen	tests/test_utils.hh	/^inline bool compare_tcp_headers_
 concatenate	libsponge/util/buffer.cc	/^string BufferList::concatenate() const {$/;"	f	class:BufferList
 config_segment	tests/tcp_fsm_test_harness.cc	/^void TestFdAdapter::config_segment(TCPSegment &seg) {$/;"	f	class:TestFdAdapter
 connect	libsponge/util/socket.cc	/^void Socket::connect(const Address &address) { SystemCall("connect", ::connect(fd_num(), address, address.size())); }$/;"	f	class:Socket
+const	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+const	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
 copy	libsponge/util/buffer.hh	/^    std::string copy() const { return std::string(str()); }$/;"	f	class:Buffer
 data	tests/tcp_expectation.hh	/^    std::string data;$/;"	m	struct:Write
 description	tests/byte_stream_test_harness.cc	/^std::string BufferEmpty::description() const { return "buffer_empty: " + to_string(_buffer_empty); }$/;"	f	class:BufferEmpty
@@ -447,9 +633,9 @@ description	tests/tcp_expectation.hh	/^    virtual std::string description() con
 dgram	tests/network_interface_test_harness.hh	/^    InternetDatagram dgram;$/;"	m	struct:SendDatagram
 direction	libsponge/util/eventloop.hh	/^        Direction direction;  \/\/!< Direction::In for reading from fd, Direction::Out for writing to fd.$/;"	m	class:EventLoop::Direction::Rule
 duplicate	libsponge/util/file_descriptor.cc	/^FileDescriptor FileDescriptor::duplicate() const { return FileDescriptor(_internal_fd); }$/;"	f	class:FileDescriptor
-empty	libsponge/stream_reassembler.cc	/^bool StreamReassembler::empty() const { return {}; }$/;"	f	class:StreamReassembler
-end_input	libsponge/byte_stream.cc	/^void ByteStream::end_input() {$/;"	f	class:ByteStream
-eof	libsponge/byte_stream.cc	/^bool ByteStream::eof() const {$/;"	f	class:ByteStream
+empty	libsponge/stream_reassembler.cc	/^bool StreamReassembler::empty() const { return _output.buffer_empty(); }$/;"	f	class:StreamReassembler
+end_input	libsponge/byte_stream.cc	/^void ByteStream::end_input() { end_input_ = true; }$/;"	f	class:ByteStream
+eof	libsponge/byte_stream.cc	/^bool ByteStream::eof() const { return end_input_ && buffer_empty(); }$/;"	f	class:ByteStream
 eof	libsponge/util/file_descriptor.hh	/^    bool eof() const { return _internal_fd->_eof; }$/;"	f	class:FileDescriptor
 err_num	tests/test_err_if.hh	/^static int err_num = 1;$/;"	v
 error	libsponge/byte_stream.hh	/^    bool error() const { return _error; }$/;"	f	class:ByteStream
@@ -542,6 +728,8 @@ expected	tests/network_interface_test_harness.hh	/^    EthernetFrame expected;$/
 expected	tests/network_interface_test_harness.hh	/^    std::optional<InternetDatagram> expected;$/;"	m	struct:ReceiveFrame
 fd	libsponge/util/eventloop.hh	/^        FileDescriptor fd;    \/\/!< FileDescriptor to monitor for activity.$/;"	m	class:EventLoop::Direction::Rule
 fd_num	libsponge/util/file_descriptor.hh	/^    int fd_num() const { return _internal_fd->_fd; }$/;"	f	class:FileDescriptor
+features	build/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v
+features	build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v
 frame	tests/network_interface_test_harness.hh	/^    EthernetFrame frame;$/;"	m	struct:ReceiveFrame
 from_ipv4_numeric	libsponge/util/address.cc	/^Address Address::from_ipv4_numeric(const uint32_t ip_address) {$/;"	f	class:Address
 gai_error_category	libsponge/util/address.cc	/^class gai_error_category : public error_category {$/;"	c	file:
@@ -563,7 +751,49 @@ in_syn_sent	tests/tcp_fsm_test_harness.cc	/^TCPTestHarness TCPTestHarness::in_sy
 in_time_wait	tests/tcp_fsm_test_harness.cc	/^TCPTestHarness TCPTestHarness::in_time_wait(const TCPConfig &cfg,$/;"	f	class:TCPTestHarness
 inet_cksum	tests/ipv4_parser.cc	/^uint16_t inet_cksum(const uint8_t *data, const size_t len) {$/;"	f
 inet_cksum	tests/tcp_parser.cc	/^uint16_t inet_cksum(const uint8_t *data, const size_t len) {$/;"	f
-input_ended	libsponge/byte_stream.cc	/^bool ByteStream::input_ended() const {$/;"	f	class:ByteStream
+info_arch	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_cray	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v
+info_language_extensions_default	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v
+info_language_extensions_default	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v
+info_language_standard_default	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_standard_default =$/;"	v
+info_language_standard_default	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_standard_default = "INFO" ":" "standard_default["$/;"	v
+info_platform	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate_version	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v
+info_version	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v
+info_version_internal	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";$/;"	v
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";$/;"	v
+input_ended	libsponge/byte_stream.cc	/^bool ByteStream::input_ended() const { return end_input_; }$/;"	f	class:ByteStream
 interest	libsponge/util/eventloop.hh	/^        InterestT interest;   \/\/!< A callback that returns `true` whenever fd should be polled.$/;"	m	class:EventLoop::Direction::Rule
 ip	libsponge/util/address.hh	/^    std::string ip() const { return ip_port().first; }$/;"	f	class:Address
 ip_port	libsponge/util/address.cc	/^pair<string, uint16_t> Address::ip_port() const {$/;"	f	class:Address
@@ -571,6 +801,14 @@ ipv4_numeric	libsponge/util/address.cc	/^uint32_t Address::ipv4_numeric() const 
 listen	libsponge/util/socket.cc	/^void TCPSocket::listen(const int backlog) { SystemCall("listen", ::listen(fd_num(), backlog)); }$/;"	f	class:TCPSocket
 local_address	libsponge/util/socket.cc	/^Address Socket::local_address() const { return get_address("getsockname", getsockname); }$/;"	f	class:Socket
 main	apps/webget.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
 main	doctests/address_dt.cc	/^int main() {$/;"	f
 main	doctests/parser_dt.cc	/^int main() {$/;"	f
 main	doctests/socket_dt.cc	/^int main() {$/;"	f
@@ -712,13 +950,17 @@ override	tests/network_interface_test_harness.hh	/^    void execute(NetworkInter
 payload	libsponge/util/socket.hh	/^        std::string payload;     \/\/!< UDP datagram payload$/;"	m	struct:UDPSocket::received_datagram
 peek_output	libsponge/byte_stream.cc	/^std::string ByteStream::peek_output(const size_t len) const {$/;"	f	class:ByteStream
 peer_address	libsponge/util/socket.cc	/^Address Socket::peer_address() const { return get_address("getpeername", getpeername); }$/;"	f	class:Socket
-pop_output	libsponge/byte_stream.cc	/^void ByteStream::pop_output(const size_t len) { $/;"	f	class:ByteStream
+pop_output	libsponge/byte_stream.cc	/^void ByteStream::pop_output(const size_t len) {$/;"	f	class:ByteStream
 port	libsponge/util/address.hh	/^    uint16_t port() const { return ip_port().second; }$/;"	f	class:Address
 portnum	doctests/socket_example_1.cc	/^const uint16_t portnum = ((std::random_device()()) % 50000) + 1025;$/;"	v
 portnum	doctests/socket_example_2.cc	/^const uint16_t portnum = ((std::random_device()()) % 50000) + 1025;$/;"	v
 property	tests/byte_stream_test_harness.cc	/^ByteStreamExpectationViolation ByteStreamExpectationViolation::property(const std::string &property_name,$/;"	f	class:ByteStreamExpectationViolation
 property	tests/network_interface_test_harness.cc	/^NetworkInterfaceExpectationViolation NetworkInterfaceExpectationViolation::property(const std::string &property_name,$/;"	f	class:NetworkInterfaceExpectationViolation
-push_substring	libsponge/stream_reassembler.cc	/^void StreamReassembler::push_substring(const string &data, const size_t index, const bool eof) {$/;"	f	class:StreamReassembler
+push_substring	libsponge/stream_reassembler.cc	/^void StreamReassembler::push_substring(const string &data, const uint64_t index, const bool eof) {$/;"	f	class:StreamReassembler
+qnxnto	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 random_private_ethernet_address	tests/net_interface.cc	/^EthernetAddress random_private_ethernet_address() {$/;"	f
 read	libsponge/byte_stream.cc	/^std::string ByteStream::read(const size_t len) {$/;"	f	class:ByteStream
 read	libsponge/util/file_descriptor.cc	/^string FileDescriptor::read(const size_t limit) {$/;"	f	class:FileDescriptor
@@ -741,7 +983,7 @@ recvd2	doctests/socket_example_2.cc	/^auto recvd2 = sock3.read();$/;"	v
 recvd2	doctests/socket_example_3.cc	/^auto recvd2 = pipe1.read();$/;"	v
 register_read	libsponge/util/file_descriptor.hh	/^    void register_read() { ++_internal_fd->_read_count; }    \/\/!< increment read count$/;"	f	class:FileDescriptor
 register_write	libsponge/util/file_descriptor.hh	/^    void register_write() { ++_internal_fd->_write_count; }  \/\/!< increment write count$/;"	f	class:FileDescriptor
-remaining_capacity	libsponge/byte_stream.cc	/^size_t ByteStream::remaining_capacity() const {$/;"	f	class:ByteStream
+remaining_capacity	libsponge/byte_stream.cc	/^size_t ByteStream::remaining_capacity() const { return capacity_ - buffer_.length(); }$/;"	f	class:ByteStream
 remove_prefix	libsponge/util/buffer.cc	/^void Buffer::remove_prefix(const size_t n) {$/;"	f	class:Buffer
 remove_prefix	libsponge/util/buffer.cc	/^void BufferList::remove_prefix(size_t n) {$/;"	f	class:BufferList
 remove_prefix	libsponge/util/buffer.cc	/^void BufferViewList::remove_prefix(size_t n) {$/;"	f	class:BufferViewList
@@ -813,7 +1055,7 @@ u32	libsponge/util/parser.cc	/^uint32_t NetParser::u32() { return _parse_int<uin
 u32	libsponge/util/parser.cc	/^void NetUnparser::u32(string &s, const uint32_t val) { return _unparse_int<uint32_t>(s, val); }$/;"	f	class:NetUnparser
 u8	libsponge/util/parser.cc	/^uint8_t NetParser::u8() { return _parse_int<uint8_t>(); }$/;"	f	class:NetParser
 u8	libsponge/util/parser.cc	/^void NetUnparser::u8(string &s, const uint8_t val) { return _unparse_int<uint8_t>(s, val); }$/;"	f	class:NetUnparser
-unassembled_bytes	libsponge/stream_reassembler.cc	/^size_t StreamReassembler::unassembled_bytes() const { return {}; }$/;"	f	class:StreamReassembler
+unassembled_bytes	libsponge/stream_reassembler.cc	/^size_t StreamReassembler::unassembled_bytes() const { return _unassembled_bytes; }$/;"	f	class:StreamReassembler
 unix_error	libsponge/util/util.hh	/^    explicit unix_error(const std::string &attempt, const int error = errno)$/;"	f	class:unix_error
 unix_error	libsponge/util/util.hh	/^class unix_error : public tagged_error {$/;"	c
 val1	doctests/parser_example.cc	/^const uint32_t val1 = 0xdeadbeef;$/;"	v
@@ -825,6 +1067,8 @@ violated_field	tests/sender_harness.hh	/^    static SegmentExpectationViolation 
 violated_field	tests/tcp_expectation_forward.hh	/^    static SegmentExpectationViolation violated_field(const std::string &field_name,$/;"	f	class:SegmentExpectationViolation
 violated_verb	tests/sender_harness.hh	/^    static SegmentExpectationViolation violated_verb(const std::string &msg) {$/;"	f	class:SegmentExpectationViolation
 violated_verb	tests/tcp_expectation_forward.hh	/^    static SegmentExpectationViolation violated_verb(const std::string &msg) {$/;"	f	class:SegmentExpectationViolation
+volatile	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+volatile	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
 wait_next_event	libsponge/util/eventloop.cc	/^EventLoop::Result EventLoop::wait_next_event(const int timeout_ms) {$/;"	f	class:EventLoop
 with_ack	tests/receiver_harness.hh	/^    SegmentArrives &with_ack(WrappingInt32 ackno_) {$/;"	f	struct:SegmentArrives
 with_ack	tests/receiver_harness.hh	/^    SegmentArrives &with_ack(uint32_t ackno_) { return with_ack(WrappingInt32{ackno_}); }$/;"	f	struct:SegmentArrives
