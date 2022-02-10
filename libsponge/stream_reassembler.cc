@@ -13,7 +13,7 @@ void DUMMY_CODE(Targs &&... /* unused */) {}
 using namespace std;
 
 StreamReassembler::StreamReassembler(const size_t capacity)
-    : _output(capacity), _capacity(capacity), _unassembled_bytes_count(0), _eof_index(-1) {}
+    : _output(capacity), _capacity(capacity), _unassembled_bytes(std::vector<char>(capacity)), _unassembled_exist(std::vector<bool>(capacity)), _unassembled_bytes_count(0), _eof_index(-1) {}
 
 //! \details This function accepts a substring (aka a segment) of bytes,
 //! possibly out-of-order, from the logical stream, and assembles any newly
@@ -30,9 +30,10 @@ void StreamReassembler::push_substring(const string &data, const uint64_t index,
             break;
         if (cur_index < write_len)
             continue;
-        if (!_unassembled_bytes.count(cur_index)) {
+        if (!_unassembled_exist[cur_index % _capacity]) {
             _unassembled_bytes_count++;
-            _unassembled_bytes[cur_index] = data.at(idx);
+            _unassembled_bytes[cur_index % _capacity] = data.at(idx);
+			_unassembled_exist[cur_index % _capacity] = true;
         }
     }
     if (eof)
@@ -41,10 +42,10 @@ void StreamReassembler::push_substring(const string &data, const uint64_t index,
     string assembled_bytes = "";
     uint64_t end_index = write_len;
     for (uint64_t idx = write_len; idx < read_len + _capacity; idx++) {
-        if (!_unassembled_bytes.count(idx))
+        if (!_unassembled_exist[idx % _capacity])
             break;
-        assembled_bytes += _unassembled_bytes[idx];
-        _unassembled_bytes.erase(idx);
+        assembled_bytes += _unassembled_bytes[idx % _capacity];
+		_unassembled_exist[idx % _capacity] = false;
         _unassembled_bytes_count--;
         end_index = idx + 1;
     }
