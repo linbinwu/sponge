@@ -16,8 +16,8 @@ using namespace std;
 //! \param n The input absolute 64-bit sequence number
 //! \param isn The initial sequence number
 WrappingInt32 wrap(uint64_t n, WrappingInt32 isn) {
-	uint32_t val = ((n & UINT32_MAX) + isn.raw_value()) & UINT32_MAX;
-	return WrappingInt32{val};
+    uint32_t val = ((n & UINT32_MAX) + isn.raw_value()) & UINT32_MAX;
+    return WrappingInt32{val};
 }
 
 //! Transform a WrappingInt32 into an "absolute" 64-bit sequence number (zero-indexed)
@@ -31,8 +31,11 @@ WrappingInt32 wrap(uint64_t n, WrappingInt32 isn) {
 //! and the other stream runs from the remote TCPSender to the local TCPReceiver and
 //! has a different ISN.
 uint64_t unwrap(WrappingInt32 n, WrappingInt32 isn, uint64_t checkpoint) {
-	uint64_t val = ((n.raw_value() + (1ul << 32) - isn.raw_value()) & UINT32_MAX) + checkpoint - (checkpoint & UINT32_MAX);
-	if (val < checkpoint && checkpoint - val > (1ul << 31)) val += (1ul << 32);
-	else if (val > checkpoint && val >= (1ul << 32) && val - checkpoint > (1ul << 31)) val -= (1ul << 32);
-	return val;
+    uint64_t val =
+        ((n.raw_value() + (1ul << 32) - isn.raw_value()) & UINT32_MAX) + checkpoint - (checkpoint & UINT32_MAX);
+    if (val < checkpoint && checkpoint - val > (1ul << 31))
+        val += (1ul << 32);
+    else if (val > checkpoint && val >= (1ul << 32) && val - checkpoint > (1ul << 31))
+        val -= (1ul << 32);
+    return val;
 }
