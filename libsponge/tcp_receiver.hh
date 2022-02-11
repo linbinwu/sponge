@@ -6,6 +6,8 @@
 #include "tcp_segment.hh"
 #include "wrapping_integers.hh"
 
+#include <cstdlib>
+#include <ctime>
 #include <optional>
 
 //! \brief The "receiver" part of a TCP implementation.
@@ -19,6 +21,12 @@ class TCPReceiver {
 
     //! The maximum number of bytes we'll store.
     size_t _capacity;
+
+    WrappingInt32 _receiver_isn{0};
+    WrappingInt32 _sender_isn{0};
+    uint64_t _abs_seqno{};
+    bool _syned{};
+    bool _fined{};
 
   public:
     //! \brief Construct a TCP receiver
