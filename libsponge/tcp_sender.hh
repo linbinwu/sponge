@@ -7,6 +7,7 @@
 #include "wrapping_integers.hh"
 
 #include <functional>
+#include <map>
 #include <queue>
 
 //! \brief The "sender" part of a TCP implementation.
@@ -26,11 +27,34 @@ class TCPSender {
     //! retransmission timer for the connection
     unsigned int _initial_retransmission_timeout;
 
+    unsigned int _retransmission_timeout;
+
+    unsigned int _consecutive_retransmissions{0};
+
     //! outgoing stream of bytes that have not yet been sent
     ByteStream _stream;
 
     //! the (absolute) sequence number for the next byte to be sent
     uint64_t _next_seqno{0};
+
+    uint64_t _last_ackno{0};
+
+    uint16_t _window_size{1};
+
+    uint16_t _send_size{0};
+
+    size_t _cur_time{0};
+
+    bool send_syn{};
+
+    bool send_fin{};
+
+    struct WaitingAck {
+        size_t send_time{0};
+        TCPSegment seg{};
+    };
+
+    std::map<uint64_t, WaitingAck> _waiting_ack_segments{};
 
   public:
     //! Initialize a TCPSender
